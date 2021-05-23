@@ -89,55 +89,29 @@ header ul li {
   border-top: none;
 }
 
-.row {
-  width: 100%;
+#projects {
+  width: 300px;
+  margin: 0 auto;
   padding: 1rem;
-  margin: 1rem 0;
-  display: flex;
-  justify-content: space-around;
 }
-.row .col {
-  text-align: center;
-  text-transform: uppercase;
-  width: 100px;
-}
-.row .col .image-wrapper {
-  position: relative;
-  height: 100px;
-  overflow: hidden;
+#projects li {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: 1rem 0;
 }
-.row .col .image-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  opacity: 0.2;
-  transition: opacity 0.2s ease-in-out;
+#projects li a {
+  text-transform: uppercase;
 }
-.row .col .image-wrapper:hover::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  opacity: 0;
+#projects li a:hover {
+  text-decoration: underline;
 }
-.row .col .image-wrapper img {
-  width: 100%;
-}
-.row .col .image-wrapper img.wide {
-  height: 100%;
-}
-.row .col p {
-  margin-top: 0.25rem;
+#projects li img {
+  margin-right: 1rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: brightness(50%);
 }
 
 @media only screen and (min-width: 600px) {
